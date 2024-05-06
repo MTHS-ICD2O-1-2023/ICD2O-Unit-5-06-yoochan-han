@@ -1,9 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Title</title>
-  </head>
-  <body>
-    <p>Paragraph</p>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="The information program, in JS" />
+  <meta name="author" content="Yoochan Han" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
+  <title>multiplication calculator</title>
+</head>
+<body>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="./js/script.js"></script>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">multiplication calculator</span>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <form action="#" class="text-box">
+        <p>Enter the two numbers you want to multiply</p>
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" pattern="-?[1-0]*(\.[1-0]+)?" id="get_number1">
+          <label class="mdl-textfield__label" for="get_number1">Number 1</label>
+          <span class="mdl-textfield__error">It has to be number</span>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" pattern="-?[1-0]*(\.[1-0]+)?" id="get_number2">
+          <label class="mdl-textfield__label" for="get_number2">Number 2</label>
+          <span class="mdl-textfield__error">It has to be number</span>
+        </div>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="ShowAnswer()">
+          calculate
+        </button>
+      </form>
+      <div>
+        <br />
+        <h4 id="TheAnswer"></h4>
+      </div>
+  </div>
+  </main>
+  </div>
+</body>
 </html>
