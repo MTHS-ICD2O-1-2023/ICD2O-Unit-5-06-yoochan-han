@@ -13,4 +13,4 @@ function ShowAnswer() {
     counter ++
   }
   document.getElementById("TheAnswer").innerHTML = number1 + "x" + number2 + "=" + answer
-}
+} 
