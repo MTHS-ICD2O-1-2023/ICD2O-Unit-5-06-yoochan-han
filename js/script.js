@@ -4,6 +4,7 @@
 // Created on: Apr 2024
 // This file contains the JS functions for index.html
 function ShowAnswer() {
+  "use strict"
   const number1 = parseFloat(document.getElementById("get_number1").value)
   const number2 = parseInt(document.getElementById("get_number2").value)
   let counter = 0
